@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #333;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 20px 0;
+    background: #fff;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+th {
+    background: #eee;
+}
+a, button {
+    background: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+a:hover, button:hover {
+    background: #0056b3;
+}
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 300px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
