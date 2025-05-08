@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Agregar Tarea</title>
+</head>
+<body>
+    <h1>Agregar Nueva Tarea</h1>
+    <form action="/add" method="post" th:object="${todo}">
+        <label for="title">Título:</label>
+        <input type="text" id="title" th:field="*{title}" required/>
+        <br/>
+        <label for="completed">Completada:</label>
+        <input type="checkbox" id="completed" th:field="*{completed}"/>
+        <br/>
+        <button type="submit">Agregar</button>
+    </form>
+    <a href="/">Volver a la lista</a>
+</body>
+</html>
