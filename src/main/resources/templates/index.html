@@ -13,6 +13,7 @@
                 <th>ID</th>
                 <th>Título</th>
                 <th>Completada</th>
+                <th>Usuario</th>
             </tr>
         </thead>
         <tbody>
@@ -20,6 +21,7 @@
                 <td th:text="${todo.id}"></td>
                 <td th:text="${todo.title}"></td>
                 <td th:text="${todo.completed} ? 'Sí' : 'No'"></td>
+                <td th:text="${todo.user != null ? todo.user.username : 'Sin usuario'}"></td>
             </tr>
         </tbody>
     </table>
