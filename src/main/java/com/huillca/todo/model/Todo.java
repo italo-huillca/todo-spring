@@ -4,15 +4,17 @@ public class Todo {
     private Long id;
     private String title;
     private boolean completed;
+    private User user; // Nuevo campo
 
     // Constructor vacío
     public Todo() {}
 
     // Constructor con parámetros
-    public Todo(Long id, String title, boolean completed) {
+    public Todo(Long id, String title, boolean completed, User user) {
         this.id = id;
         this.title = title;
         this.completed = completed;
+        this.user = user;
     }
 
     // Getters y Setters
@@ -38,5 +40,13 @@ public class Todo {
 
     public void setCompleted(boolean completed) {
         this.completed = completed;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
